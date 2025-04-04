@@ -1,0 +1,358 @@
+/*******************************************home**********************************************/
+
+* {
+  font-family: "Segoe UI Light";
+}
+
+.navbar a {
+  color     : #fff;
+  transition: all 1s;
+}
+
+.navbar a:hover {
+  color: #ff206e;
+}
+
+.home {
+  height          : 100vh;
+  background-image: url(../imagess/bg.jpg);
+  background-size : 100% 100%;
+  position        : relative;
+}
+
+.home i {
+  margin       : 10px;
+  padding      : 10px;
+  border       : 1px solid #fff;
+  border-radius: 50%;
+  color        : #fff;
+}
+
+.social-icons {
+  position: absolute;
+  bottom  : 10px;
+}
+
+.home h1 {
+  font-size  : 2.5rem;
+  font-weight: 900;
+}
+
+.home .view {
+  color: #ff206e;
+}
+
+.heading h4 {
+  font-size     : 2.5rem;
+  position      : absolute;
+  letter-spacing: 10px;
+}
+
+/* Home Page Color Choices */
+
+/* Tomato red for vibrant, eye-catching sections */
+#item-tomato {
+  background-color: tomato;
+}
+
+/* Teal for a calm, professional look */
+#item-teal {
+  background-color: teal;
+}
+
+/* Royal Blue to convey trust and reliability */
+#item-royalblue {
+  background-color: royalblue;
+}
+
+/* Neutral Gray for balance and subtle elements */
+#item-gray {
+  background-color: gray;
+}
+
+/* Bright Pink (#ff206e) for a bold, modern accent */
+#item-pink {
+  background-color: #ff206e;
+}
+
+/*****************************************about*************************************************/
+.about .creative {
+  color      : #ff206e;
+  font-weight: 700;
+}
+
+.heading {
+  position: relative;
+}
+
+.heading h2 {
+  font-size     : 5rem;
+  color         : rgba(0, 0, 0, 0.1);
+  letter-spacing: 10px;
+}
+
+.about {
+  background-image: url(../imagess/light_dot.jpg);
+}
+
+.about .mail {
+  font-weight: 700;
+}
+
+.mail span {
+  text-decoration: underline;
+  cursor         : pointer;
+}
+
+/***********************************blog********************************************/
+.blog span {
+  color: #ff206e;
+}
+
+.mybook {
+  position        : absolute;
+  right           : 10px;
+  top             : -25px;
+  padding         : 20px;
+  border-radius   : 50%;
+  background-color: #fff;
+  box-shadow      : 0 3px 20px rgba(0, 0, 0, 0.15);
+}
+
+.blog {
+  background-image: url(../imagess/light_dot.jpg);
+}
+
+.blog .item {
+  background-color: #fff;
+}
+
+.blog .item img {
+  transition: all 1s;
+}
+
+.blog .item:hover img {
+  transform: scale(1.1);
+}
+
+/************************************************testmonial******************************************************/
+#testmonial img {
+  width        : 90px;
+  border-radius: 50%;
+  transform    : translateY(-45px);
+  border       : 1px solid #fff;
+  box-shadow   : 0 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+#testmonial .item {
+  border: 2px solid #f4f4f4;
+}
+
+.item h6 {
+  color: #ff206e;
+}
+
+#testmonial .carousel-indicators {
+  bottom: -50px;
+}
+
+#testmonial .carousel-indicators li {
+  width           : 10px;
+  height          : 10px;
+  border-radius   : 50%;
+  background-color: #ff206e;
+}
+
+#testmonial .carousel-inner {
+  padding-top: 100px;
+}
+
+@media (max-width: 695px) {
+  #testmonial h2 {
+    font-size: 2rem;
+  }
+
+  #testmonial h3 {
+    font-size: 1rem;
+  }
+}
+
+i {
+  color: #ff206e;
+}
+
+.newNavBg {
+  background-color: tomato;
+  transition      : all 1s;
+}
+
+.transparentNav {
+  background-color: transparent;
+  transition      : all 1s;
+}
+
+#btnUp {
+  position     : fixed;
+  bottom       : 20px;
+  right        : 20px;
+  border       : 1px solid #ff206e;
+  padding      : 10px;
+  border-radius: 50%;
+  cursor       : pointer;
+  z-index      : 99999;
+  display      : none;
+}
+
+.options li {
+  width : 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.options img {
+  width: 50px;
+}
+
+.option-container {
+  position: fixed;
+  top     : 300px;
+  /* left : -500; */
+  z-index : 999999;
+}
+
+.option-container .cog {
+  border: 1px solid #17a2b8;
+}
+
+.option-container img,
+i,
+li {
+  cursor: pointer;
+}
+
+#loading {
+  width           : 100%;
+  height          : 100vh;
+  background-color: indigo;
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  z-index         : 999999999999;
+  display         : flex;
+}
+
+body {
+  overflow: hidden;
+}
+
+.sk-folding-cube {
+  margin           : 20px auto;
+  width            : 40px;
+  height           : 40px;
+  position         : relative;
+  -webkit-transform: rotateZ(45deg);
+  transform        : rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float            : left;
+  width            : 50%;
+  height           : 50%;
+  position         : relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform    : scale(1.1);
+  transform        : scale(1.1);
+}
+
+.sk-folding-cube .sk-cube:before {
+  content                 : "";
+  position                : absolute;
+  top                     : 0;
+  left                    : 0;
+  width                   : 100%;
+  height                  : 100%;
+  background-color        : #ff206e;
+  -webkit-animation       : sk-foldCubeAngle 2.4s infinite linear both;
+  animation               : sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin    : 100% 100%;
+  transform-origin        : 100% 100%;
+}
+
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+  transform        : scale(1.1) rotateZ(90deg);
+}
+
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+  transform        : scale(1.1) rotateZ(180deg);
+}
+
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+  transform        : scale(1.1) rotateZ(270deg);
+}
+
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+  animation-delay        : 0.3s;
+}
+
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay        : 0.6s;
+}
+
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+  animation-delay        : 0.9s;
+}
+
+@-webkit-keyframes sk-foldCubeAngle {
+
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform        : perspective(140px) rotateX(-180deg);
+    opacity          : 0;
+  }
+
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform        : perspective(140px) rotateX(0deg);
+    opacity          : 1;
+  }
+
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform        : perspective(140px) rotateY(180deg);
+    opacity          : 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+
+  0%,
+  10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+    transform        : perspective(140px) rotateX(-180deg);
+    opacity          : 0;
+  }
+
+  25%,
+  75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+    transform        : perspective(140px) rotateX(0deg);
+    opacity          : 1;
+  }
+
+  90%,
+  100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+    transform        : perspective(140px) rotateY(180deg);
+    opacity          : 0;
+  }
+}
